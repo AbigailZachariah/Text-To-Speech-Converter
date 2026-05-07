@@ -31,19 +31,62 @@ body{
     margin: 20px 82px;
     border-radius: 14px;
     color: white;
-    background-color: rgb(8 50 74);
+    background-color: rgb(12 57 98);
     font-size: 18px;
     resize: none;
     border: 0;
     outline: 0;
 }
 
-.row select{
-    width:55%;
-    font-size: 18px;
+textarea::placeholder{
     color: white;
-    background-color: rgb(8 50 74);
+    font-size:18px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.row select{
+    width: 542px;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    outline: 0;
+    background-color:rgb(12 57 98);
     border-radius: 30px;
-    margin: 12px 80px;
-    padding: 5px 18px;
+    margin-left: 80px;
+    padding: 10px 30px;
+    appearance: none ;
+
+    /* Adding dropdown icon */
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 17px;
+}
+
+.row button{
+    display: flex;
+    align-items: center;
+    background-color:#1fd6ff;
+    color: black;
+    border:0;
+    outline: 0;
+    font-size: 16px;
+    cursor: pointer;
+    padding:10px 20px; 
+    border-radius: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.row button img{
+    width: 14px;
+    height: 16px;
+    margin-right: 8px;
 }
